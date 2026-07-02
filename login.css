@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EEF1;
+}
+
+.container-all-grid-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+.logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.logo a {
+    width: 200px;
+    height: 200px;
+}
+
+.cotainer-all-center {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-texto-login {
+    font-family: "Poppins", sans-serif;
+    color: #0284C7;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.container-texto-login h1 {
+    font-size:24px;
+    letter-spacing: 2px;
+}
+
+.container-texto-login p {
+    font-weight: 200;
+}
+
+.button-apple {
+    width: 500px;
+    height: 70px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #0284C7;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-apple img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.button-apple a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-columns: 40px 200px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-google-login {
+    width: 500px;
+    height: 70px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #0284C7;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-google-login img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.button-google-login a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-columns: 40px 200px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container-linhas-OU-login {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.container-linhas-OU-login span {
+    font-family: "Poppins", sans-serif;
+    color: #0284C7;
+}
+
+.container-botao-email {
+    width: 500px;
+    height: 70px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #0284C7;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-botao-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #0084c7;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.container-email-input {
+    flex-grow: 1;
+}
+
+.container-email-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-email-input input::placeholder {
+    color: #000;
+}
+
+.checkbox-login label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #0084c7;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.checkbox-login input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.container-texto-footer-login {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-texto-footer-login a {
+    color: #0084c7;
+    font-family: "Poppins", sans-serif;
+}

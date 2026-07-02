@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0284C7;
+}
+
+.container-all-grid-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-form {
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 50px;
+    background: rgba(0, 43, 107, 0.548);
+    backdrop-filter: blur(20px);
+    box-shadow:
+        0 8px 32px rgba(2,132,199,.20),
+        inset 0 1px 0 rgba(255,255,255,.15);
+}
+
+.logo img {
+    width: 100px;
+}
+
+.lista-header-first {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.lista-header-first li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Righteous", sans-serif;
+}
+
+.lista-header-second {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.sacola-img, .lupa-img, .login-img {
+    width: 25px;
+}
+
+.banner-home-section {
+    min-height: 100vh;
+    background-image: url("banner-home.gif");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.outlet-section-home {
+    background-color: #01263A;
+    min-height: 100vh;
+    display: grid;
+}
+
+.container-texto-produto-outlet-home {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+}
+
+.texto-outlet-home {
+    display: grid;
+    gap: 20px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.texto-outlet-home p {
+    color: #0284C7;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.texto-outlet-home h2 {
+    font-size: 42px;
+}
+
+.texto-outlet-home span {
+   color: #0284C7; 
+}
+
+.container-botao-aproveite {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 16px;
+    width: 50%;
+    height: 10vh;
+    background-color: #0284C7;
+}
+
+.a-botao-aproveite {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-produto-outlet-home {
+    display: grid;
+    grid-template-columns: repeat(2, 280px); 
+    gap: 24px;
+    justify-content: end;
+}
+
+.container-produto1-outlet-home, 
+.container-produto2-outlet-home {
+    background-color: #D9D9D9;
+    height: 600px;
+    width: auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.produto-link-outlet-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.em-destaque-section {
+    background-color: #0284C7;
+    min-height: 100vh;
+    display: grid;
+    padding: 20px;
+}
+
+.em-destaque-section h2 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.lista-produtos-destaque-home {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.lista-produtos-destaque-home li, 
+.li-lista-produtos-destaque-home {
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    
+}
+
+.produto-destaque-home-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caixa-texto-produto-destaque-home {
+    height: 30vh;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.a-destaque {
+    text-decoration: none;
+}
+
+.caixa-texto-produto-destaque-home h3 {
+    font-size: 19px;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.preco-linha-produto-destaque-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.preco-antigo-destaque-home {
+    text-decoration: line-through;
+    color: #3a3a3a;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.preco-novo-destaque-home {
+    font-weight: 800;
+    color: #01263A;
+    font-size: 20px;
+}
+
+.desconto-produto-destaque-home {
+    background-color: #0284C7;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.categoria-section-home {
+    background-color: #01263A;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.container-categorias-home {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lista-categorias-home {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.container-img-texto-categoria-home {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 700px;
+}
+
+.caixa-categoria-home {
+    width: 100%;
+    height: 100%;
+}
+
+.caixa-categoria-home a {
+    width: 100%;
+    height: 100%;
+}
+
+.caixa-categoria-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caixa-texto-categoria-home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 20px;
+}
+
+.caixa-texto-categoria-home h3 {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container-footer {
+    background-color: #80D2FF;
+    min-height: 50vh;
+}
+
+.container-listas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 40px;
+}
+
+.lista-footer-ajuda, .lista-footer-institucional {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-footer-ajuda li, .lista-footer-institucional li {
+ margin-top: 10px;
+}
+
+.lista-footer-ajuda li a, .lista-footer-institucional li a {
+    color: #fff;
+}
+
+.conteiner-footer-baixo {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 40px;
+}
+
+.container-redes-sociais-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    margin-top: 20px;
+}
+
+.caxia-img-rede-social img {
+ width: 25px;
+ height: 25px;
+ filter: brightness(0) invert(1);
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container-all-grid-checkout">
+
+        <header>
+            <div class="container-header">
+                <div class="logo-texto-header">
+                    <a href="home.html"><img src="veneto-logo.png" alt=""></a>
+                    <a href="home.html"><h1>VENETO FITNESS</h1></a>
+                </div>
+
+                <div class="sacola-div">
+                    <a href="pedidos.html"><img src="sacola.png.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-esquerda-direita">
+
+            <div class="container-esquerda">
+
+                <div class="h2-title" style="margin-top: 0;"><h2>Dados de Contato</h2></div>
+
+                <div class="header-dados">
+                    <div class="container-inputs-header">
+                        <input type="email" class="campo-email" placeholder="E-mail">
+                        <label class="label-opcao-novidades">
+                            <input type="checkbox">
+                            Receber ofertas e novidades por e-mail
+                        </label>
+                    </div>
+                </div>
+
+                <div class="h2-title"><h2>Entrega</h2></div>
+
+                <fieldset>
+
+                    <div class="container-nome-sobrenome">
+                        <div class="div-input-nomes">
+                            <input type="text" class="input-nome" placeholder="Nome">
+                        </div>
+                        <div class="div-input-nomes">
+                            <input type="text" class="input-sobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="container-cep">
+                        <input type="tel" class="input-cep" placeholder="Código Postal">
+                    </div>
+
+                    <div class="container-endereço">
+                        <input type="text" class="input-endereco" placeholder="Endereço">
+                    </div>
+                    
+                    <div class="container-complemento">
+                        <input type="text" class="input-complemento" placeholder="Apartamento, Bloco, etc. (opicional)">
+                    </div>
+
+                    <div class="container-cidade-estado">
+                        <div class="div-input-cidade/estado">
+                            <input type="text" class="input-cidade" placeholder="Cidade">
+                        </div>
+                        <div class="div-input-cidade/estado">
+                            <select name="estado" class="select-estado">
+                                <option value="">Estado</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="bh">Bahia</option>
+                                <option value="es">Espírito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pe">Pernanbuco</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="div-input-telefone">
+                        <input type="tel" class="input-telefone" placeholder="Telefone">
+                    </div>
+
+                    <div class="h2-title"><h2>Método de Envio</h2></div>
+
+                    <div class="container-sedex">
+                        <div class="div-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="div-dois-texto">
+                            <p class="p-sedex"><b>Correios SEDEX</b></p>
+                            <p class="p-data">Receba entre 26 a 29 de Junho</p>
+                        </div>
+                        <div class="div-valor-texto">
+                            <span class="preco-produto">R$ 37,50</span>
+                        </div>
+                    </div>
+
+                    <div class="container-pac">
+                        <div class="div-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="div-dois-texto">
+                            <p class="p-sedex"><b>Correios PAC</b></p>
+                            <p class="p-data">Receba entre 26 a 5 de Julho</p>
+                        </div>
+                        <div class="div-valor-texto">
+                            <span class="preco-produto">R$ 19,50</span>
+                        </div>
+                    </div>
+
+                    <div class="h2-title"><h2>Retirada em</h2></div>
+
+                    <div class="container-retirada">
+                        <div class="div-checkbox">
+                            <input type="checkbox">
+                        </div>
+                        <div class="div-dois-texto">
+                            <p class="p-sedex"><b>Retirada na loja - Rua Antonio de Albuquerque 261</b></p>
+                            <p class="p-data">Retire Hoje</p>
+                            <p>Segunda a Sábado, das 9:00 às 20:00</p>
+                        </div>
+                        <div class="div-valor-texto">
+                            <span class="preco-produto">Grátis</span>
+                        </div>
+                    </div>
+
+                    <div class="h2-title"><h2>Métodos de Pagamento</h2></div>
+
+                    <div class="container-cartão">
+                        <div class="header-cartao">
+                            <div class="div-checkbox-cartao">
+                                <label>
+                                    <input type="checkbox"> Cartão de Crédito
+                                </label>
+                            </div>
+                        </div>
+                            <div class="container-numeroCartao">
+                                <input type="number" placeholder="Número do cartão">
+                            </div>
+                            <div class="container-data-cvv">
+                                <div class="div-data-cvv">
+                                    <input type="date" placeholder="Data de vencimento">
+                                </div>
+                                <div class="div-data-cvv">
+                                    <input type="number" placeholder="CVV">
+                                </div>
+                            </div>
+                            <div class="container-parcelas">
+                                <select name="parcelas" class="select-parcelas">
+                                    <option value="">1x R$ 169,99 sem juros (169,99)</option>
+                                    <option value="">2x R$ 84,99 sem juros (169,99)</option>
+                                    <option value="">3x R$ 56,66 sem juros (169,99)</option>
+                                </select>
+                            </div>
+                            <div conainer-cpf>
+                                <input type="number" placeholder="CPF titular">
+                            </div>
+                    </div>
+                    <div class="container-pix">
+                        <div class="checkbox-pix"><input type="checkbox"></div>
+                        <div class="textos-pix">
+                            <p>Á vista no PIX</p>
+                            <p>Clique no botão "Pagar agora" para gerar o código PIX</p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="botão-pagar">
+                    <a href="home.html">Pagar Agora</a>
+                </div>
+            </div>
+
+            <div class="container-direita-fixed">
+                <div class="container-info-produto"> <!--coloca um gridzinho aq pae, 3 colunas-->
+                    <div class="container-img-produto"><img src="produto2search.webp" alt=""></div>
+                    <div class="texto-produto">
+                        <h3>Calça legging Esportiva Selada</h3>
+                        <p>Preto / P</p>
+                        <div class="botao-editar"><a href="checkout.html">Editar</a></div>
+                    </div>
+                    <div class="preco-produto">R$ 169,99</div>
+                </div>
+                <div class="container-botao-cupom-validar">
+                    <div class="div-codigo-cupom"><input type="text" placeholder="Código do Cupom"></div>
+                    <div class="botao-validar"><a href="checkout.html">Validar</a></div>
+                </div>
+                <div class="texto-cima">
+                    <div class="div-cima">
+                        <p>Subtotal · 1 item</p>
+                        <span>R$ 169,99</span>
+                    </div>
+                    <div class="div-baixo">
+                        <p>Frete de Entrega</p>
+                        <span>R$ 37,50</span>
+                    </div>
+                    <div class="div-preco-baixo">
+                        <p>Total</p>
+                        <span>R$ 207,49</span> 
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>
